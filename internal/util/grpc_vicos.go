@@ -3,7 +3,7 @@
 package util
 
 import (
-	"github.com/digital-dream-labs/vector-cloud/internal/anki/robot"
+	"github.com/digital-dream-labs/vector-cloud/internal/robot"
 )
 
 func init() {

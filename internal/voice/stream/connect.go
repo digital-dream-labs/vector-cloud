@@ -1,12 +1,13 @@
 package stream
 
 import (
-	"clad/cloud"
 	"context"
 	"crypto/tls"
 	"errors"
 	"net/http"
 	"time"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 
 	"github.com/digital-dream-labs/vector-cloud/internal/config"
 	"github.com/digital-dream-labs/vector-cloud/internal/log"

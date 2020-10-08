@@ -14,7 +14,7 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/util"
 	"github.com/digital-dream-labs/vector-cloud/internal/voice"
 
-	"clad/cloud"
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 
 	"github.com/digital-dream-labs/vector-cloud/internal/cloudproc/harness"
 

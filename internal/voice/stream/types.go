@@ -1,9 +1,10 @@
 package stream
 
 import (
-	"clad/cloud"
 	"context"
 	"sync"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 )
 
 type Streamer struct {

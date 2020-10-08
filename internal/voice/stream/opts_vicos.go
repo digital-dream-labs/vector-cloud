@@ -3,8 +3,8 @@
 package stream
 
 import (
-	"anki/log"
-	"anki/robot"
+	"github.com/digital-dream-labs/vector-cloud/internal/log"
+	"github.com/digital-dream-labs/vector-cloud/internal/robot"
 
 	"github.com/anki/sai-chipper-voice/client/chipper"
 )

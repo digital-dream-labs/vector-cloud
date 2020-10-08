@@ -1,15 +1,16 @@
 package stream_test
 
 import (
-	"anki/log"
-	"anki/voice/stream"
-	"anki/voice/stream/testconn"
-	"clad/cloud"
 	"context"
 	"errors"
 	"fmt"
 	"testing"
 	"time"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
+	"github.com/digital-dream-labs/vector-cloud/internal/log"
+	"github.com/digital-dream-labs/vector-cloud/internal/voice/stream"
+	"github.com/digital-dream-labs/vector-cloud/internal/voice/stream/testconn"
 
 	"github.com/anki/sai-chipper-voice/client/chipper"
 	"github.com/stretchr/testify/assert"

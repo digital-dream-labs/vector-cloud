@@ -2,12 +2,13 @@ package stream
 
 import (
 	"bytes"
-	"clad/cloud"
 	"context"
 	"encoding/json"
 	"fmt"
 	"math/rand"
 	"time"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 	"github.com/digital-dream-labs/vector-cloud/internal/util"

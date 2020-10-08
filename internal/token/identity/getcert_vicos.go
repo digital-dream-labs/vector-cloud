@@ -3,8 +3,9 @@
 package identity
 
 import (
-	"anki/robot"
 	"crypto/tls"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/robot"
 
 	"github.com/gwatts/rootcerts"
 	"google.golang.org/grpc/credentials"

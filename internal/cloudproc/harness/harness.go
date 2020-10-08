@@ -1,8 +1,9 @@
 package harness
 
 import (
-	"clad/cloud"
 	"context"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 
 	"github.com/digital-dream-labs/vector-cloud/internal/cloudproc"
 	"github.com/digital-dream-labs/vector-cloud/internal/voice"

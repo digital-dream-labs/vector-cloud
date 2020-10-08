@@ -3,8 +3,8 @@
 package offboard_vision
 
 import (
-	"anki/log"
-	"anki/robot"
+	"github.com/digital-dream-labs/vector-cloud/internal/log"
+	"github.com/digital-dream-labs/vector-cloud/internal/robot"
 )
 
 func init() {

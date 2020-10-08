@@ -2,10 +2,10 @@ package main
 
 import (
 	"bytes"
-	"clad/cloud"
 	"flag"
 	"fmt"
 
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 	"github.com/digital-dream-labs/vector-cloud/internal/ipc"
 )
 

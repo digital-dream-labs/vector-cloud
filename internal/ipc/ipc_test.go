@@ -1,12 +1,13 @@
 package ipc_test
 
 import (
-	"anki/ipc"
 	"fmt"
 	"math/rand"
 	"net"
 	"testing"
 	"time"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/ipc"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

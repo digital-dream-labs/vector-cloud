@@ -1,7 +1,6 @@
 package logcollector
 
 import (
-	"anki/token/identity"
 	"context"
 	"fmt"
 	"io/ioutil"
@@ -11,6 +10,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/token/identity"
 
 	"github.com/anki/sai-go-util/dockerutil"
 	ac "github.com/aws/aws-sdk-go/aws/credentials"

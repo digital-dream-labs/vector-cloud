@@ -3,9 +3,10 @@
 package ipc_test
 
 import (
-	"anki/ipc"
 	"fmt"
 	"testing"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/ipc"
 )
 
 func TestUnixPacket(t *testing.T) {

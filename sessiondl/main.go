@@ -1,7 +1,6 @@
 package main
 
 import (
-	"ankidev/accounts"
 	"bufio"
 	"bytes"
 	"encoding/binary"
@@ -14,6 +13,8 @@ import (
 	"net/http"
 	"os"
 	"path"
+
+	"github.com/digital-dream-labs/vector-cloud/internal//accounts"
 
 	"github.com/anki/sai-go-cli/apiutil"
 	"github.com/anki/sai-go-cli/config"

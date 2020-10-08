@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"clad/cloud"
 	"context"
 	"crypto/tls"
 	"flag"
@@ -13,6 +12,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 	"github.com/digital-dream-labs/vector-cloud/internal/cloudproc"
 	"github.com/digital-dream-labs/vector-cloud/internal/config"
 	"github.com/digital-dream-labs/vector-cloud/internal/ipc"

@@ -1,8 +1,9 @@
 package main
 
 import (
-	"ankidev/accounts"
 	"fmt"
+
+	"github.com/digital-dream-labs/vector-cloud/internal/accounts"
 
 	"github.com/anki/sai-go-cli/config"
 )
