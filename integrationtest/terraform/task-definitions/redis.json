@@ -1,0 +1,12 @@
+[
+    {
+        "name": "redis",
+        "image": "redis:alpine",
+        "portMappings": [
+            {
+              "containerPort": 6379,
+              "hostPort": 6379
+            }
+        ]
+    }
+  ]
