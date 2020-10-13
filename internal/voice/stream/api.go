@@ -8,7 +8,7 @@ import (
 
 	"github.com/digital-dream-labs/vector-cloud/internal/util"
 
-	"github.com/anki/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
 )
 
 func NewStreamer(ctx context.Context, receiver Receiver, streamSize int, opts ...Option) *Streamer {

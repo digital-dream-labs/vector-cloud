@@ -1,6 +1,7 @@
 package accounts
 
 import (
+	"context"
 	"fmt"
 	"net/http"
 
@@ -14,7 +15,7 @@ import (
 // of the config without saving it.
 func DoLogin(envName, user, pass string) (*config.Session, *config.Config, error) {
 	c, cfg, err := newClient(envName)
-	resp, err := c.NewUserSession(user, pass)
+	resp, _, err := c.NewUserSession(context.Background(), user, pass)
 	if err != nil {
 		return nil, nil, err
 	} else if resp.StatusCode != http.StatusOK {

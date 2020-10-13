@@ -1,9 +1,9 @@
 package accounts
 
 import (
-	"github.com/anki/sai-go-accounts/client/accounts"
 	"github.com/anki/sai-go-cli/apiutil"
 	"github.com/anki/sai-go-cli/config"
+	"github.com/digital-dream-labs/sai-go-accounts/client/accounts"
 )
 
 func newClient(envName string) (*accounts.AccountsClient, *config.Config, error) {

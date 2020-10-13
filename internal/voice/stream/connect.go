@@ -16,7 +16,7 @@ import (
 
 	"github.com/gwatts/rootcerts"
 
-	"github.com/anki/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
 	"github.com/google/uuid"
 	"google.golang.org/grpc/credentials"
 )
@@ -128,21 +128,24 @@ func (strm *Streamer) openChipperStream(ctx context.Context, creds credentials.P
 	opts = append(opts, chipper.WithSessionID(sessionID))
 	opts = append(opts, chipper.WithFirmwareVersion(robot.OSVersion()))
 	opts = append(opts, chipper.WithBootID(robot.BootID()))
-	conn, err := chipper.NewConn(ctx, strm.opts.url, opts...)
+	conn, err := chipper.NewConn(ctx, strm.opts.url, "", opts...)
 	if err != nil {
 		log.Println("Error getting chipper connection:", err)
 		return nil, nil, &CloudError{cloud.ErrorType_Connecting, err}
 	}
 	var stream chipper.Stream
-	if strm.opts.checkOpts != nil {
+
+	switch {
+	case strm.opts.checkOpts != nil:
 		stream, err = conn.NewConnectionStream(ctx, *strm.opts.checkOpts)
-	} else if strm.opts.kgOpts != nil {
+	case strm.opts.kgOpts != nil:
 		stream, err = conn.NewKGStream(ctx, *strm.opts.kgOpts)
-	} else if strm.opts.intentOpts != nil {
+	case strm.opts.intentOpts != nil:
 		stream, err = conn.NewIntentStream(ctx, *strm.opts.intentOpts)
-	} else {
+	default:
 		err = errors.New("fatal error: all stream option types are nil")
 	}
+
 	if err != nil {
 		return nil, nil, &CloudError{cloud.ErrorType_NewStream, err}
 	}

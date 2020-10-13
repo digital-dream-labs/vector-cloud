@@ -7,7 +7,7 @@ import (
 
 	"github.com/digital-dream-labs/vector-cloud/internal/token"
 
-	"github.com/anki/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
 )
 
 var platformOpts []chipper.ConnOpt

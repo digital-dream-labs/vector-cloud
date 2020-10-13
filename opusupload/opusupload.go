@@ -8,8 +8,8 @@ import (
 
 	"github.com/digital-dream-labs/vector-cloud/internal/config"
 
-	"github.com/anki/sai-chipper-voice/client/chipper"
 	pb "github.com/digital-dream-labs/api/go/chipperpb"
+	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
 	"github.com/google/uuid"
 )
 

@@ -59,6 +59,7 @@ github.com/aalpern/go-metrics v0.0.0-20181116155206-644932c99203/go.mod h1:wHUOZ
 github.com/aalpern/go-metrics-charts v0.0.0-20161209215532-b3486d1ba0a8/go.mod h1:+9KO59qyXnlrpTnlb93uR992W9EDLc+JKy0giwrNNZo=
 github.com/aalpern/go-metrics-charts v1.1.0 h1:M5p6rMVGpycNW8YtDnnbml/PpmxdCQ30RRlr8/TO4oA=
 github.com/aalpern/go-metrics-charts v1.1.0/go.mod h1:n/6bxNYwR1xRY506DZRzW5Z+b4avqP6Ng/vYKzMKwJw=
+github.com/agrison/go-tablib v0.0.0-20160226161643-0b1e077a1380 h1:O9sagz34Rx/VKsfxGiqoBofNMib/z+d5uI6iNnRsp5w=
 github.com/agrison/go-tablib v0.0.0-20160226161643-0b1e077a1380/go.mod h1:M9nmO4lBRWR/bBv7UCOmDJ1MB2DVoqz19B4JchDA+K0=
 github.com/akavel/rsrc v0.8.0/go.mod h1:uLoCtb9J+EyAqh+26kdrTgmzRBFPGOolLWKpdxkKq+c=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
@@ -67,19 +68,24 @@ github.com/alicebob/gopher-json v0.0.0-20200520072559-a9ecdc9d1d3a/go.mod h1:SGn
 github.com/alicebob/miniredis/v2 v2.13.2/go.mod h1:uS970Sw5Gs9/iK3yBg0l9Uj9s25wXxSpQUE9EaJ/Blg=
 github.com/anki/opus-go v0.0.0-20180802013204-2a0c51abedbf h1:9xIafL0ySTaZiuwXd9hiY9OnMCd+7j7h0+DBsmoPuSk=
 github.com/anki/opus-go v0.0.0-20180802013204-2a0c51abedbf/go.mod h1:8lBKa8VKYS2L8YoYDPWhL8Ew0aQa873ctj+uwtbIJZM=
+github.com/anki/sai-accounts-audit v0.0.0-20190417214950-bf31dd0570e7 h1:HLsdWgdSuHPxG+sE3GfE5AJqmQvPfOA1ZS8l27cNn68=
 github.com/anki/sai-accounts-audit v0.0.0-20190417214950-bf31dd0570e7/go.mod h1:Au/sMLXKI+fvz4zvjd7gqDry+riaFfCJfVzdOG3NwoE=
 github.com/anki/sai-awsutil v0.0.0-20180918172830-ef142f85948b/go.mod h1:1EydvPouYQC8Adz7MVetCQwGbgVrgOJ1k4ySGZ2iGVY=
 github.com/anki/sai-awsutil v0.0.0-20190323162907-fd97797beb0d/go.mod h1:1EydvPouYQC8Adz7MVetCQwGbgVrgOJ1k4ySGZ2iGVY=
+github.com/anki/sai-awsutil v0.0.0-20190417220948-521bf7bbf608 h1:wqZ08XTBQLLEJmXo9NLzmPKWnLAk7I86WLc4RHzuVYI=
 github.com/anki/sai-awsutil v0.0.0-20190417220948-521bf7bbf608/go.mod h1:1EydvPouYQC8Adz7MVetCQwGbgVrgOJ1k4ySGZ2iGVY=
 github.com/anki/sai-blobstore v0.0.0-20190417220928-44935bf82bd4 h1:WflDdLI38GR+5hBtbsxhDtmp0X+bds1UACyXVwF/oZU=
 github.com/anki/sai-blobstore v0.0.0-20190417220928-44935bf82bd4/go.mod h1:UUIHQ3eIoaKakvy6Y1b6AymBTijZqeTU+hAxe1bcgMg=
 github.com/anki/sai-chipper-voice v0.0.0-20200703204129-529a6f92813f h1:M2f2MZkP9lYpmTfvDRjbeaN9H//BskwJwUxFH6smj3o=
 github.com/anki/sai-chipper-voice v0.0.0-20200703204129-529a6f92813f/go.mod h1:p0UHN6BuATjhaUqs60YY9dA0srMNwopNJSjoQ5sfk0w=
+github.com/anki/sai-das-client v0.0.0-20190417221912-a4aaf5cb5b6e h1:7n/s5//9WHlZugugmIgK2nT2KIRikw3MmZbX95r6TuI=
 github.com/anki/sai-das-client v0.0.0-20190417221912-a4aaf5cb5b6e/go.mod h1:NoWcuowpt0YxMlWHk3g5EgTf7kN9avG4iyuFwPcDGP4=
+github.com/anki/sai-das-simulator v0.0.0-20190417222625-24cf04846f66 h1:aPo/YN8z//cacF4a7zJ0zmJmn6oLax/kqVsi2UJfVX0=
 github.com/anki/sai-das-simulator v0.0.0-20190417222625-24cf04846f66/go.mod h1:p88Zq5c0f2gMOFkAY/+6nDmu88TZ3NA62oQt/avxZsw=
 github.com/anki/sai-go-accounts v0.0.0-20190417201138-6c4aca02b2cc/go.mod h1:zCgFRi4+Dqwf0tL2UkpTvqgSCQpodk2MCOvrDAVxgIM=
 github.com/anki/sai-go-accounts v0.0.0-20190426152742-a6574d86220b h1:wF/uQ+eiMss9myyzg6sQicBUFqK1a/t7Jy5jEWZ2Xx0=
 github.com/anki/sai-go-accounts v0.0.0-20190426152742-a6574d86220b/go.mod h1:zCgFRi4+Dqwf0tL2UkpTvqgSCQpodk2MCOvrDAVxgIM=
+github.com/anki/sai-go-ankival v0.0.0-20190417223853-959a3c412692 h1:2RxfvLBiJ981UC8LbGMLtkZkiSmIEq8jNNIUM/63/Pk=
 github.com/anki/sai-go-ankival v0.0.0-20190417223853-959a3c412692/go.mod h1:38hWKLEsIgdciaYQ89ECBcVXuK4F9UL190aO6YDqrEk=
 github.com/anki/sai-go-cli v0.0.0-20190423175100-f5d79624bf9f h1:IDYaFOzrWO0duolzWEtBDcWa/OJW8xZOasCN/9wQiX0=
 github.com/anki/sai-go-cli v0.0.0-20190423175100-f5d79624bf9f/go.mod h1:mnesOCTy5kjyXncKcbbDG1wXWC/gtrZzSMKEupEz/+I=
@@ -99,6 +105,7 @@ github.com/anki/sai-splunk v0.0.0-20181129223612-414b1da5dcb9/go.mod h1:IOGmZAkk
 github.com/anki/sai-token-service v0.0.0-20190225193115-6e54408b68e4/go.mod h1:i5PCCBwuvaIfAkRakBNpuKH0G0+X7wAjRG7XHxqdOpU=
 github.com/anki/sai-token-service v0.0.0-20190417225938-36b120cb29c2 h1:O+pSfOtkCtBIex7XI/M6ywlaL1QnIxM+hEVS+l2+sLE=
 github.com/anki/sai-token-service v0.0.0-20190417225938-36b120cb29c2/go.mod h1:i5PCCBwuvaIfAkRakBNpuKH0G0+X7wAjRG7XHxqdOpU=
+github.com/anki/sai-virtualrewards v0.0.0-20180922075840-f63a619797c8 h1:XXy8HgOBBi7XeFoyQfDiKwUtJAxRqZ56NztdTyOnX0s=
 github.com/anki/sai-virtualrewards v0.0.0-20180922075840-f63a619797c8/go.mod h1:4ntLyakoZJzxDf9UK/8NNmY0QGeaO9mOxgmoAJaNLvA=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e/go.mod h1:3U/XgcO3hCbHZ8TKRvWD2dDTCfh9M9ya+I9JpbB7O8o=
@@ -120,6 +127,7 @@ github.com/bjarneh/latinx v0.0.0-20120329061922-4dfe9ba2a293/go.mod h1:HdstVrPoC
 github.com/bketelsen/crypt v0.0.3-0.20200106085610-5cbc8cc4026c/go.mod h1:MKsuJmJgSg28kpZDP6UIiPt0e0Oz0kqKNGyRaWEPv84=
 github.com/blang/semver v3.1.0+incompatible/go.mod h1:kRBLl5iJ+tD4TcOOxsy/0fnwebNt5EWlYSAyrTnjyyk=
 github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869/go.mod h1:Ekp36dRnpXw/yCqJaO+ZrUyxD+3VXMFFr56k5XYrpB4=
+github.com/bndr/gotabulate v1.1.3-0.20160229131037-a1f2a699a4b8 h1:HdTyqQQOb7rEph4c3fU5PK8MiRQPa/O7+bWt4wHyWeA=
 github.com/bndr/gotabulate v1.1.3-0.20160229131037-a1f2a699a4b8/go.mod h1:0+8yUgaPTtLRTjf49E8oju7ojpU11YmXyvq1LbPAb3U=
 github.com/braintree/manners v0.0.0-20160418043613-82a8879fc5fd/go.mod h1:TNehV1AhBwtT7Bd+rh8G6MoGDbBLNs/sKdk3nvr4Yzg=
 github.com/cenkalti/backoff v1.0.0/go.mod h1:90ReRw6GdpyfrHakVjL/QHaoyV4aDUVVkXQJJJ3NXXM=
@@ -131,6 +139,7 @@ github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XL
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
+github.com/clbanning/mxj v0.0.0-20160223112145-79d247a72bab h1:7OmnYBtEREZEUATFqdifYEtYNIPglYmTpvcHgr5oKxE=
 github.com/clbanning/mxj v0.0.0-20160223112145-79d247a72bab/go.mod h1:BVjHeAH+rl9rs6f+QIpeRl0tfu10SXn1pUSa5PVGJng=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
@@ -176,24 +185,25 @@ github.com/dgryski/go-sip13 v0.0.0-20181026042036-e10d5fee7954/go.mod h1:vAd38F8
 github.com/digital-dream-labs/api v0.0.0-20200617192325-56d25552abe5/go.mod h1:bnvsQ1itDOERsflzTYFxEdORkutbl+tqC1pqfrVntdQ=
 github.com/digital-dream-labs/api v0.0.0-20200807174757-5fa5ae085cf2 h1:Bg4tsb/xaFIWa/zNwGCPTBaYlaz4Z1pBc3doOWt+D5s=
 github.com/digital-dream-labs/api v0.0.0-20200807174757-5fa5ae085cf2/go.mod h1:bnvsQ1itDOERsflzTYFxEdORkutbl+tqC1pqfrVntdQ=
-github.com/digital-dream-labs/houndify v0.0.0-20200819185515-59e7a05e0db6/go.mod h1:iCqrnK8MGn7ZBzY17QcsNvnG3B6ECV19pXpSJR2SSP8=
+github.com/digital-dream-labs/houndify v0.0.0-20200915122004-af62b61368a0/go.mod h1:iCqrnK8MGn7ZBzY17QcsNvnG3B6ECV19pXpSJR2SSP8=
 github.com/digital-dream-labs/opus-go v0.0.0-20200624151943-555f2a540cc6 h1:zIpRWEi517p2eHpk45uycg2g356QdckGEu2eLtTnJ0c=
 github.com/digital-dream-labs/opus-go v0.0.0-20200624151943-555f2a540cc6/go.mod h1:c5pEDtI90XiZ0+/qLTK2q7f2sZmtOkMvwIMHALWOLYo=
 github.com/digital-dream-labs/sai-accounts-audit v0.0.0-20200618201358-03623255d227/go.mod h1:c0RzjohTAx+1LTnMnO9mw0CbXShloK5RU0GFy4oFNlM=
 github.com/digital-dream-labs/sai-accounts-audit v0.0.0-20200814170107-7d505067445e/go.mod h1:qfRkCM9Jt9tH/K1TmqkO/xr39AiHhMJt+8zmEFQvDjI=
 github.com/digital-dream-labs/sai-blobstore v0.0.0-20200622132335-a0361a7a7d84/go.mod h1:VcPgKl0HJ2ijnWxDnejStaI8CtOVLoJLtMRCC/LTcSA=
-github.com/digital-dream-labs/sai-chipper-voice v0.0.0-20200929115716-3daca14c8080 h1:qXWcTE2AQNZNYINADjmLxFM5TPyWLTSSAFcAy24RW7E=
-github.com/digital-dream-labs/sai-chipper-voice v0.0.0-20200929115716-3daca14c8080/go.mod h1:viBH8UgmwFuJG0JK0sZG3obXFsq3IDrm6f7HXanW3cI=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20190417201138-6c4aca02b2cc/go.mod h1:k9qyGtiFHIMBnoV/luD2RrWtFPmAimHPXqdQ7FTVwgU=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20200619162404-405de41d09ee/go.mod h1:XyKd6ajii2aAxZ6+m6a8mfw1KVJExx3YLHba27wMINM=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20200622142124-1f1c0c065f23/go.mod h1:N/yv6CK6LLP1rmRJWxoFO7qVTFt8cnkKLI5am2PQksM=
+github.com/digital-dream-labs/sai-go-accounts v0.0.0-20200622173911-76ea586c0292 h1:+rIC4pO98PP2zTshCquR7Y5pxTiWAhLc/m6p+dWR76s=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20200622173911-76ea586c0292/go.mod h1:OLLcNXWtgZ1/B0TokIHhV3wjE5vALMGjyyKSWhy07vE=
 github.com/digital-dream-labs/sai-go-anki-vad v0.0.0-20200617203703-97e1e61de4e5/go.mod h1:TmwamLRXJ+cJXjW4M8WYtSjikZ34bE/XfK1FwMWaKvo=
 github.com/digital-dream-labs/sai-go-ankival v0.0.0-20200814165911-7d2e5be55f01/go.mod h1:1s/R2EOaTAY1LhjKU1QshvBGxZhGO2/bXVccQONEREI=
 github.com/digital-dream-labs/sai-go-cli v0.0.0-20200814170425-c5d8891d918a/go.mod h1:AGz0BWqpGIsG5b1vP/VNFnJgwfLEL6ywIgzcFfB4GR4=
 github.com/digital-dream-labs/sai-jdocs v0.0.0-20200618143836-8c66f74bb72f/go.mod h1:lpM5T6zk0gp4t9200tlj+ph0JhPJinQtdU7hlpODvjY=
 github.com/digital-dream-labs/sai-jdocs v0.0.0-20200622150827-f7a8de5cc809/go.mod h1:Vr5uTin2BsLpLsBdS3bLTHjMpsBUfgJG3LCkVhsOmOE=
+github.com/digital-dream-labs/sai-token-service v0.0.0-20200618144459-208f946d51da h1:fUrrNzkE/TJpP5ya4dgZm2Y41ZwL/558+daBVNaZNwk=
 github.com/digital-dream-labs/sai-token-service v0.0.0-20200618144459-208f946d51da/go.mod h1:MMUGw57pGviyGyCdmWvPXMo7quFuRC9DzJ/KGgUcovk=
+github.com/digital-dream-labs/sai-token-service v0.0.0-20200929111702-76b4efc7df11 h1:pl8pH/XO34aMs7drFN38T/9oArhqN4zIDJnQQIIgblY=
 github.com/digital-dream-labs/service-framework v0.0.0-20200622125035-dad77106a971/go.mod h1:HTlL4JpUkWTr/pA9QUz+tWpAe0AQ1Ndl+T04UDNtlag=
 github.com/digital-dream-labs/service-framework v0.0.0-20200622132206-f92e69dedf87/go.mod h1:Glw8l0HTyiakqy7LNWCENzrUIXzzW3OqC2EIQv2AyxU=
 github.com/digital-dream-labs/service-framework v0.0.0-20200622144044-43e02faf10c9/go.mod h1:iKk8rFVTa+pk7vAzjyZRBLwJ9oSCVQzi+6Qrd1kKdTw=
@@ -201,6 +211,7 @@ github.com/digital-dream-labs/service-framework v0.0.0-20200623143516-2071bf121a
 github.com/digital-dream-labs/service-framework v0.0.0-20200623151418-5bac2788922e/go.mod h1:lVKuCngG71GRiRazg9Zv7UsCi2jgHYq/9NYIFVC7v1o=
 github.com/digital-dream-labs/service-framework v0.0.0-20200803182836-ac4394a1fc93/go.mod h1:5YfOV+j1+DOBE9fKEP3zmoa9spQdYTPOwb1jeQMhOtg=
 github.com/digital-dream-labs/service-framework v0.0.0-20200922145520-215d92f51ffb/go.mod h1:abDfe5pCrDbG4b+FGjcJM9ELS05xCevIcmNoKM6xVwc=
+github.com/digital-dream-labs/service-framework v0.0.0-20200928190607-f4905988210a h1:Z9+Uxenb4PposPEcov5PK96+tABmQoh4lvCVyIUy/1s=
 github.com/digital-dream-labs/service-framework v0.0.0-20200928190607-f4905988210a/go.mod h1:BUKVBqKwZ7hcrpb+vZjPuDrkeHhLweDFBZRuCpef1bc=
 github.com/digital-dream-labs/service-framework/v2 v2.0.0-20200617192605-3f64439712ae/go.mod h1:bPaBC4k8aGTXihnDVtSriAHq2j2n7kJOuSWkzs2FPDw=
 github.com/digital-dream-labs/service-framework/v2 v2.0.0-20200619193458-b9fb31e5cea9/go.mod h1:bPaBC4k8aGTXihnDVtSriAHq2j2n7kJOuSWkzs2FPDw=
@@ -234,6 +245,7 @@ github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.m
 github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1mIlRU8Am5FuJP05cCM98=
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
+github.com/fatih/structs v0.0.0-20160224082352-12ff68a6f48a h1:RmKPcTmAtJcpQ5GOYL4p/djZxJxLX9qSLPjPjaIjWko=
 github.com/fatih/structs v0.0.0-20160224082352-12ff68a6f48a/go.mod h1:9NiDSp5zOcgEDl+j00MP/WkGVPOlPRLejGD8Ga6PJ7M=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/fsnotify/fsnotify v1.4.9 h1:hsms1Qyu0jgnwNXIxa+/V/PDsU6CfLf6CNO8H7IWoS4=
@@ -327,6 +339,7 @@ github.com/gorilla/context v0.0.0-20140604161150-14f550f51af5/go.mod h1:kBGZzfjB
 github.com/gorilla/context v1.1.1 h1:AWwleXJkX/nhcU9bZSnZoi3h/qGYqQAGhq6zZe/aQW8=
 github.com/gorilla/context v1.1.1/go.mod h1:kBGZzfjB9CEq2AlWe17Uuf7NDRt0dE0s8S51q0aT7Yg=
 github.com/gorilla/handlers v0.0.0-20140714225948-470089673c69/go.mod h1:Qkdc/uu4tH4g6mTK6auzZ766c4CA0Ng8+o/OAirnOIQ=
+github.com/gorilla/handlers v1.4.2 h1:0QniY0USkHQ1RGCLfKxeNHK9bkDHGRYGNDFBCS+YARg=
 github.com/gorilla/handlers v1.4.2/go.mod h1:Qkdc/uu4tH4g6mTK6auzZ766c4CA0Ng8+o/OAirnOIQ=
 github.com/gorilla/mux v1.7.0/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
 github.com/gorilla/mux v1.7.4 h1:VuZ8uybHlWmqV03+zRzdwKL4tUnIp1MAQtp1mIFE1bc=
@@ -336,6 +349,7 @@ github.com/gotestyourself/gotestyourself v2.2.0+incompatible/go.mod h1:zZKM6oeNM
 github.com/grd/ogg v0.0.0-20130623210630-0dae53159b70 h1:BbrcLhyNM9P1UAZnPBomiAvDv7WEIJy+sfrJItfSUL8=
 github.com/grd/ogg v0.0.0-20130623210630-0dae53159b70/go.mod h1:K8T3jGUZQeKP7y1e801QDZAB53F6Lpt+NgnwAZTxwrg=
 github.com/grpc-ecosystem/go-grpc-middleware v1.0.0/go.mod h1:FiyG127CGDf3tlThmgyCl78X/SZQqEOJBCDaAfeWzPs=
+github.com/grpc-ecosystem/go-grpc-middleware v1.2.0 h1:0IKlLyQ3Hs9nDaiK5cSHAGmcQEIC8l2Ts1u6x5Dfrqg=
 github.com/grpc-ecosystem/go-grpc-middleware v1.2.0/go.mod h1:mJzapYve32yjrKlk9GbyCZHuPgZsrbyIbyKhSzOpg6s=
 github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0/go.mod h1:8NvIoxWQoOIhqOTXgfV/d3M/q6VIi02HzZEHgUlZvzk=
 github.com/grpc-ecosystem/grpc-gateway v1.8.5/go.mod h1:vNeuVxBJEsws4ogUvrchl83t/GYV9WGTSLVdBhOQFDY=
@@ -439,6 +453,7 @@ github.com/magiconair/properties v1.8.1/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czP
 github.com/mattbaird/gosaml v0.0.0-20151208173928-4cc6d457adea/go.mod h1:OZnMucIImg0tbs469OBn36CYSO7k2kXkz5Ou8hSP7FA=
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
 github.com/mattn/go-isatty v0.0.3/go.mod h1:M+lRXTBqGeGNdLjl/ufCoiOlB5xdOkqRJdNxMWT7Zi4=
+github.com/mattn/go-runewidth v0.0.0-20160216110916-d037b52ae5c0 h1:cnFPVNHseYErMRhF/ZSQ2F6dfUiCxRjW9poZYzGEh+c=
 github.com/mattn/go-runewidth v0.0.0-20160216110916-d037b52ae5c0/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
 github.com/mattn/go-sqlite3 v0.0.0-20140712143818-f87f73cc9a96/go.mod h1:FPy6KqzDD04eiIsT53CuJW3U88zkxoIYsOqkbpncsNc=
 github.com/mattn/go-sqlite3 v2.0.3+incompatible h1:gXHsfypPkaMZrKbD5209QV9jbUTJKjyR5WD3HYQSd+U=
@@ -461,6 +476,7 @@ github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRW
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e h1:fD57ERR4JtEqsWbfPhv4DMiApHyliiK5xCTNVSPiaAs=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e/go.mod h1:zD1mROLANZcx1PVRCS0qkT7pwLkGfwJo4zjcN/Tysno=
 github.com/nkovacs/streamquote v0.0.0-20170412213628-49af9bddb229/go.mod h1:0aYXnNPJ8l7uZxf45rWW1a/uME32OF0rhiYGNQ2oF2E=
+github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d h1:VhgPp6v9qf9Agr/56bj7Y/xa04UccTW04VP0Qed4vnQ=
 github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d/go.mod h1:YUTz3bUH2ZwIWBy3CJBeOBEugqcmXREj14T+iG/4k4U=
 github.com/nxadm/tail v1.4.4 h1:DQuhQpB1tVlglWS2hLQ5OV6B5r8aGxSrPc5Qo6uTN78=
 github.com/nxadm/tail v1.4.4/go.mod h1:kenIhsEOeOJmVchQTgglprH7qJGnHDVpk1VPCcaMI8A=
@@ -502,6 +518,7 @@ github.com/opentracing-contrib/go-aws-sdk v0.0.0-20200219142134-2e00fb2121c5 h1:
 github.com/opentracing-contrib/go-aws-sdk v0.0.0-20200219142134-2e00fb2121c5/go.mod h1:yI4m7klRqSRjgM761T6LsPJCQVqh+Ujaab2isxw+0GM=
 github.com/opentracing-contrib/go-gorilla v0.0.0-20190110000444-ced666783644/go.mod h1:JcJTH6nsplW7FqrfVQW7XCWVSzOrxrgfMNYAoMBmHX0=
 github.com/opentracing-contrib/go-grpc v0.0.0-20180928155321-4b5a12d3ff02/go.mod h1:JNdpVEzCpXBgIiv4ds+TzhN1hrtxq6ClLrTlT9OQRSc=
+github.com/opentracing-contrib/go-grpc v0.0.0-20191001143057-db30781987df h1:vdYtBU6zvL7v+Tr+0xFM/qhahw/EvY8DMMunZHKH6eE=
 github.com/opentracing-contrib/go-grpc v0.0.0-20191001143057-db30781987df/go.mod h1:DYR5Eij8rJl8h7gblRrOZ8g0kW1umSpKqYIBTgeDtLo=
 github.com/opentracing-contrib/go-stdlib v0.0.0-20181222025249-77df8e8e70b4/go.mod h1:PLldrQSroqzH70Xl+1DQcGnefIbqsKR7UDaiux3zV+w=
 github.com/opentracing-contrib/go-stdlib v0.0.0-20190205184154-464eb271c715/go.mod h1:PLldrQSroqzH70Xl+1DQcGnefIbqsKR7UDaiux3zV+w=
@@ -516,6 +533,7 @@ github.com/opentracing/opentracing-go v1.2.0 h1:uEJPy/1a5RIPAJ0Ov+OIO8OxWu77jEv+
 github.com/opentracing/opentracing-go v1.2.0/go.mod h1:GxEUsuufX4nBwe+T+Wl9TAgYrxe9dPLANfrWvHYVTgc=
 github.com/ory/dockertest v3.3.5+incompatible/go.mod h1:1vX4m9wsvi00u5bseYwXaSnhNrne+V0E6LAcBILJdPs=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
+github.com/patrickmn/go-cache v2.1.1-0.20180527043350-9f6ff22cfff8+incompatible h1:C7DZUwOyGOb2R3RMwaGotsMU+aH+EtJ9sINCeBPUD+o=
 github.com/patrickmn/go-cache v2.1.1-0.20180527043350-9f6ff22cfff8+incompatible/go.mod h1:3Qf8kWWT7OJRJbdiICTKqZju1ZixQ/KpMGzzAfe6+WQ=
 github.com/pelletier/go-toml v1.2.0/go.mod h1:5z9KED0ma1S8pY6P1sdut58dfprrGBbd/94hg7ilaic=
 github.com/pelletier/go-toml v1.8.0/go.mod h1:D6yutnOGMveHEPV7VQOuvI/gXY61bv+9bAOTRnLElKs=
@@ -567,6 +585,7 @@ github.com/sirupsen/logrus v1.4.2 h1:SPIRibHv4MatM3XXNO2BJeFLZwZ2LvZgfQ5+UNI2im4
 github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6MwdIuYE2rE=
 github.com/sirupsen/logrus v1.6.0 h1:UBcNElsrwanuuMsnGSlYmtmgbb23qDR5dG+6X6Oo89I=
 github.com/sirupsen/logrus v1.6.0/go.mod h1:7uNnSEd1DgxDLC74fIahvMZmmYsHGZGEOFrfsX/uA88=
+github.com/skratchdot/open-golang v0.0.0-20160302144031-75fb7ed4208c h1:fyKiXKO1/I/B6Y2U8T7WdQGWzwehOuGIrljPtt7YTTI=
 github.com/skratchdot/open-golang v0.0.0-20160302144031-75fb7ed4208c/go.mod h1:sUM3LWHvSMaG192sy56D9F7CNvL7jUJVXoqM1QKLnog=
 github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d/go.mod h1:OnSkiWE9lh6wB0YB77sQom3nweQdgAjqCqsofrRNTgc=
 github.com/smartystreets/assertions v1.0.0/go.mod h1:kHHU4qYBaI3q23Pp3VPrmWhuIUrLW/7eUrw0BU5VaoM=
@@ -598,6 +617,7 @@ github.com/stretchr/testify v1.6.1 h1:hDPOHmpOpP40lSULcqw7IrRb/u7w6RpDC9399XyoNd
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
 github.com/syndtr/gocapability v0.0.0-20170704070218-db04d3cc01c8/go.mod h1:hkRG7XYTFWNJGYcbNJQlaLq0fg1yr4J4t/NcTQtrfww=
+github.com/tealeg/xlsx v0.0.0-20180419195153-f36fa3be8893 h1:l1uU268ZVy0b7bGrFkcN9KuianvXwPA1Jy/Q6EPKj6s=
 github.com/tealeg/xlsx v0.0.0-20180419195153-f36fa3be8893/go.mod h1:uxu5UY2ovkuRPWKQ8Q7JG0JbSivrISjdPzZQKeo74mA=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
 github.com/uber/jaeger-client-go v2.23.1+incompatible/go.mod h1:WVhlPFC8FDjOFMMWRy2pZqQJSXxYSwNYOkTr/Z6d3Kk=

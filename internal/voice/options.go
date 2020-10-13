@@ -4,7 +4,7 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/token"
 	"github.com/digital-dream-labs/vector-cloud/internal/util"
 
-	pb "github.com/anki/sai-chipper-voice/proto/anki/chipperpb"
+	pb "github.com/digital-dream-labs/api/go/chipperpb"
 )
 
 // Handler aliases the IntentService field from our protobuf that determines

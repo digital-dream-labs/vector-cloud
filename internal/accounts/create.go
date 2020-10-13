@@ -1,10 +1,11 @@
 package accounts
 
 import (
+	"context"
 	"fmt"
 	"net/http"
 
-	"github.com/anki/sai-go-util/http/apiclient"
+	"github.com/digital-dream-labs/service-framework/util/http/apiclient"
 )
 
 // DoCreate attempts to create an account with the given email and password
@@ -19,7 +20,7 @@ func DoCreate(envName, email, password string) (apiclient.Json, error) {
 		"email":    email,
 	}
 
-	r, err := c.NewRequest("POST", "/1/users", apiclient.WithJsonBody(userInfo))
+	r, err := c.NewRequest(context.Background(), "POST", "/1/users", apiclient.WithJsonBody(userInfo))
 	if err != nil {
 		return nil, err
 	}

@@ -3,7 +3,7 @@ package jdocs
 import (
 	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 
-	pb "github.com/anki/sai-jdocs/proto/jdocspb"
+	pb "github.com/digital-dream-labs/api/go/jdocspb"
 )
 
 type cladDoc cloud.Doc
@@ -38,7 +38,7 @@ func (p *pbDoc) toClad() *cloud.Doc {
 
 func (c *cladWriteReq) toProto() *pb.WriteDocReq {
 	return &pb.WriteDocReq{
-		Account: c.Account,
+		UserId:  c.Account,
 		Thing:   c.Thing,
 		DocName: c.DocName,
 		Doc:     (*cladDoc)(&c.Doc).toProto(),
@@ -47,8 +47,8 @@ func (c *cladWriteReq) toProto() *pb.WriteDocReq {
 
 func (c *cladReadReq) toProto() *pb.ReadDocsReq {
 	ret := &pb.ReadDocsReq{
-		Account: c.Account,
-		Thing:   c.Thing,
+		UserId: c.Account,
+		Thing:  c.Thing,
 	}
 	ret.Items = make([]*pb.ReadDocsReq_Item, len(c.Items))
 	for i, c := range c.Items {
@@ -62,7 +62,7 @@ func (c *cladReadReq) toProto() *pb.ReadDocsReq {
 
 func (c *cladDeleteReq) toProto() *pb.DeleteDocReq {
 	return &pb.DeleteDocReq{
-		Account: c.Account,
+		UserId:  c.Account,
 		Thing:   c.Thing,
 		DocName: c.DocName,
 	}
@@ -88,15 +88,13 @@ func (p *protoReadResp) toClad() *cloud.ReadResponse {
 }
 
 var readStatusMap = map[pb.ReadDocsResp_Status]cloud.ReadStatus{
-	pb.ReadDocsResp_UNCHANGED:         cloud.ReadStatus_Unchanged,
-	pb.ReadDocsResp_CHANGED:           cloud.ReadStatus_Changed,
-	pb.ReadDocsResp_NOT_FOUND:         cloud.ReadStatus_NotFound,
-	pb.ReadDocsResp_PERMISSION_DENIED: cloud.ReadStatus_PermissionDenied,
+	pb.ReadDocsResp_UNCHANGED: cloud.ReadStatus_Unchanged,
+	pb.ReadDocsResp_CHANGED:   cloud.ReadStatus_Changed,
+	pb.ReadDocsResp_NOT_FOUND: cloud.ReadStatus_NotFound,
 }
 
 var writeStatusMap = map[pb.WriteDocResp_Status]cloud.WriteStatus{
 	pb.WriteDocResp_ACCEPTED:                 cloud.WriteStatus_Accepted,
 	pb.WriteDocResp_REJECTED_BAD_DOC_VERSION: cloud.WriteStatus_RejectedDocVersion,
 	pb.WriteDocResp_REJECTED_BAD_FMT_VERSION: cloud.WriteStatus_RejectedFmtVersion,
-	pb.WriteDocResp_ERROR:                    cloud.WriteStatus_Error,
 }
