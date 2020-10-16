@@ -66,8 +66,6 @@ github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuy
 github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf/go.mod h1:ybxpYRFXyAe+OPACYpWeL0wqObRcbAqCMya13uyzqw0=
 github.com/alicebob/gopher-json v0.0.0-20200520072559-a9ecdc9d1d3a/go.mod h1:SGnFV6hVsYE877CKEZ6tDNTjaSXYUk6QqoIK6PrAtcc=
 github.com/alicebob/miniredis/v2 v2.13.2/go.mod h1:uS970Sw5Gs9/iK3yBg0l9Uj9s25wXxSpQUE9EaJ/Blg=
-github.com/anki/opus-go v0.0.0-20180802013204-2a0c51abedbf h1:9xIafL0ySTaZiuwXd9hiY9OnMCd+7j7h0+DBsmoPuSk=
-github.com/anki/opus-go v0.0.0-20180802013204-2a0c51abedbf/go.mod h1:8lBKa8VKYS2L8YoYDPWhL8Ew0aQa873ctj+uwtbIJZM=
 github.com/anki/sai-accounts-audit v0.0.0-20190417214950-bf31dd0570e7 h1:HLsdWgdSuHPxG+sE3GfE5AJqmQvPfOA1ZS8l27cNn68=
 github.com/anki/sai-accounts-audit v0.0.0-20190417214950-bf31dd0570e7/go.mod h1:Au/sMLXKI+fvz4zvjd7gqDry+riaFfCJfVzdOG3NwoE=
 github.com/anki/sai-awsutil v0.0.0-20180918172830-ef142f85948b/go.mod h1:1EydvPouYQC8Adz7MVetCQwGbgVrgOJ1k4ySGZ2iGVY=
@@ -76,8 +74,6 @@ github.com/anki/sai-awsutil v0.0.0-20190417220948-521bf7bbf608 h1:wqZ08XTBQLLEJm
 github.com/anki/sai-awsutil v0.0.0-20190417220948-521bf7bbf608/go.mod h1:1EydvPouYQC8Adz7MVetCQwGbgVrgOJ1k4ySGZ2iGVY=
 github.com/anki/sai-blobstore v0.0.0-20190417220928-44935bf82bd4 h1:WflDdLI38GR+5hBtbsxhDtmp0X+bds1UACyXVwF/oZU=
 github.com/anki/sai-blobstore v0.0.0-20190417220928-44935bf82bd4/go.mod h1:UUIHQ3eIoaKakvy6Y1b6AymBTijZqeTU+hAxe1bcgMg=
-github.com/anki/sai-chipper-voice v0.0.0-20200703204129-529a6f92813f h1:M2f2MZkP9lYpmTfvDRjbeaN9H//BskwJwUxFH6smj3o=
-github.com/anki/sai-chipper-voice v0.0.0-20200703204129-529a6f92813f/go.mod h1:p0UHN6BuATjhaUqs60YY9dA0srMNwopNJSjoQ5sfk0w=
 github.com/anki/sai-das-client v0.0.0-20190417221912-a4aaf5cb5b6e h1:7n/s5//9WHlZugugmIgK2nT2KIRikw3MmZbX95r6TuI=
 github.com/anki/sai-das-client v0.0.0-20190417221912-a4aaf5cb5b6e/go.mod h1:NoWcuowpt0YxMlWHk3g5EgTf7kN9avG4iyuFwPcDGP4=
 github.com/anki/sai-das-simulator v0.0.0-20190417222625-24cf04846f66 h1:aPo/YN8z//cacF4a7zJ0zmJmn6oLax/kqVsi2UJfVX0=
@@ -188,9 +184,15 @@ github.com/digital-dream-labs/api v0.0.0-20200807174757-5fa5ae085cf2/go.mod h1:b
 github.com/digital-dream-labs/houndify v0.0.0-20200915122004-af62b61368a0/go.mod h1:iCqrnK8MGn7ZBzY17QcsNvnG3B6ECV19pXpSJR2SSP8=
 github.com/digital-dream-labs/opus-go v0.0.0-20200624151943-555f2a540cc6 h1:zIpRWEi517p2eHpk45uycg2g356QdckGEu2eLtTnJ0c=
 github.com/digital-dream-labs/opus-go v0.0.0-20200624151943-555f2a540cc6/go.mod h1:c5pEDtI90XiZ0+/qLTK2q7f2sZmtOkMvwIMHALWOLYo=
+github.com/digital-dream-labs/opus-go v0.0.0-20201015195824-2c65bf153640 h1:I0dQVwvelF2M2A4lh8g1+IZ5Jme4/KUJnWwL4n2w+HE=
+github.com/digital-dream-labs/opus-go v0.0.0-20201015195824-2c65bf153640/go.mod h1:QOBX3WLyjbSPcDuoi5IT+UFTwpv8bAa9cyKG4prr1m8=
+github.com/digital-dream-labs/opus-go v0.0.0-20201015200051-963a767b6af9 h1:Tf05mQB6UQsyupu89pgO+Dh0gnxSRQlv7JnqnKFz9aA=
+github.com/digital-dream-labs/opus-go v0.0.0-20201015200051-963a767b6af9/go.mod h1:4i+ZhMTRqZ3SzIiXpmrt9c0FHVYtIYc1ndy/KCDsdms=
 github.com/digital-dream-labs/sai-accounts-audit v0.0.0-20200618201358-03623255d227/go.mod h1:c0RzjohTAx+1LTnMnO9mw0CbXShloK5RU0GFy4oFNlM=
 github.com/digital-dream-labs/sai-accounts-audit v0.0.0-20200814170107-7d505067445e/go.mod h1:qfRkCM9Jt9tH/K1TmqkO/xr39AiHhMJt+8zmEFQvDjI=
 github.com/digital-dream-labs/sai-blobstore v0.0.0-20200622132335-a0361a7a7d84/go.mod h1:VcPgKl0HJ2ijnWxDnejStaI8CtOVLoJLtMRCC/LTcSA=
+github.com/digital-dream-labs/sai-chipper-voice v0.0.0-20201014192400-4f255a33a1ef h1:MxRO83b6XT3jNo/WiKmUX7UTBiK5o77gHCg0IubHnl4=
+github.com/digital-dream-labs/sai-chipper-voice v0.0.0-20201014192400-4f255a33a1ef/go.mod h1:/D7tBYXdP/uV00LyOR+4MngzsNJhFTOn2LU2ZPkhjD0=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20190417201138-6c4aca02b2cc/go.mod h1:k9qyGtiFHIMBnoV/luD2RrWtFPmAimHPXqdQ7FTVwgU=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20200619162404-405de41d09ee/go.mod h1:XyKd6ajii2aAxZ6+m6a8mfw1KVJExx3YLHba27wMINM=
 github.com/digital-dream-labs/sai-go-accounts v0.0.0-20200622142124-1f1c0c065f23/go.mod h1:N/yv6CK6LLP1rmRJWxoFO7qVTFt8cnkKLI5am2PQksM=
@@ -203,7 +205,6 @@ github.com/digital-dream-labs/sai-jdocs v0.0.0-20200618143836-8c66f74bb72f/go.mo
 github.com/digital-dream-labs/sai-jdocs v0.0.0-20200622150827-f7a8de5cc809/go.mod h1:Vr5uTin2BsLpLsBdS3bLTHjMpsBUfgJG3LCkVhsOmOE=
 github.com/digital-dream-labs/sai-token-service v0.0.0-20200618144459-208f946d51da h1:fUrrNzkE/TJpP5ya4dgZm2Y41ZwL/558+daBVNaZNwk=
 github.com/digital-dream-labs/sai-token-service v0.0.0-20200618144459-208f946d51da/go.mod h1:MMUGw57pGviyGyCdmWvPXMo7quFuRC9DzJ/KGgUcovk=
-github.com/digital-dream-labs/sai-token-service v0.0.0-20200929111702-76b4efc7df11 h1:pl8pH/XO34aMs7drFN38T/9oArhqN4zIDJnQQIIgblY=
 github.com/digital-dream-labs/service-framework v0.0.0-20200622125035-dad77106a971/go.mod h1:HTlL4JpUkWTr/pA9QUz+tWpAe0AQ1Ndl+T04UDNtlag=
 github.com/digital-dream-labs/service-framework v0.0.0-20200622132206-f92e69dedf87/go.mod h1:Glw8l0HTyiakqy7LNWCENzrUIXzzW3OqC2EIQv2AyxU=
 github.com/digital-dream-labs/service-framework v0.0.0-20200622144044-43e02faf10c9/go.mod h1:iKk8rFVTa+pk7vAzjyZRBLwJ9oSCVQzi+6Qrd1kKdTw=
@@ -396,6 +397,8 @@ github.com/hashicorp/mdns v1.0.0/go.mod h1:tL+uN++7HEJ6SQLQ2/p+z2pH24WQKWjBPkE0m
 github.com/hashicorp/memberlist v0.1.3/go.mod h1:ajVTdAv/9Im8oMAAj5G31PhhMCZJV2pPBoIllUwCN7I=
 github.com/hashicorp/serf v0.8.2/go.mod h1:6hOLApaqBFA1NXqRQAsxw9QxuDEvNxSQRwA/JwenrHc=
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
+github.com/hraban/opus v0.0.0-20200710132758-e28f8214483b h1:5m8xAJYbTODegKLRwb2tEFgF9/X2vBERklQVzHExK8o=
+github.com/hraban/opus v0.0.0-20200710132758-e28f8214483b/go.mod h1:YQQXrWHN3JEvCtw5ImyTCcPeU/ZLo/YMA+TpB64XdrU=
 github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/ijc/Gotty v0.0.0-20170406111628-a8b993ba6abd/go.mod h1:3LVOLeyx9XVvwPgrt2be44XgSqndprz1G18rSk8KD84=
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=

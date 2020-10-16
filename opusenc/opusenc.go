@@ -12,7 +12,7 @@ import (
 
 	"github.com/digital-dream-labs/vector-cloud/internal/util"
 
-	"github.com/anki/opus-go/opus"
+	"github.com/digital-dream-labs/opus-go/opus"
 	wav "github.com/youpy/go-wav"
 )
 
