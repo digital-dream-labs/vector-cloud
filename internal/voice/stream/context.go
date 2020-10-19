@@ -13,7 +13,7 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 	"github.com/digital-dream-labs/vector-cloud/internal/util"
 
-	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/api-clients/chipper"
 )
 
 func (strm *Streamer) sendAudio(samples []byte) error {

@@ -16,7 +16,7 @@ import (
 
 	"github.com/gwatts/rootcerts"
 
-	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/api-clients/chipper"
 	"github.com/google/uuid"
 	"google.golang.org/grpc/credentials"
 )

@@ -6,7 +6,7 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 	"github.com/digital-dream-labs/vector-cloud/internal/robot"
 
-	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/api-clients/chipper"
 )
 
 func init() {

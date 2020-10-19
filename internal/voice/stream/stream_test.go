@@ -12,7 +12,7 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/voice/stream"
 	"github.com/digital-dream-labs/vector-cloud/internal/voice/stream/testconn"
 
-	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/api-clients/chipper"
 	"github.com/stretchr/testify/assert"
 )
 

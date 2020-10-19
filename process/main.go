@@ -46,7 +46,9 @@ func getHTTPClient() *http.Client {
 	// Create a HTTP client with given CA cert pool so we can use https on device
 	return &http.Client{
 		Transport: &http.Transport{
-			TLSClientConfig: &tls.Config{RootCAs: rootcerts.ServerCertPool()},
+			TLSClientConfig: &tls.Config{
+				RootCAs: rootcerts.ServerCertPool(),
+			},
 		},
 	}
 }

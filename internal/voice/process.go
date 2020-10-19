@@ -12,8 +12,8 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 	"github.com/digital-dream-labs/vector-cloud/internal/voice/stream"
 
+	"github.com/digital-dream-labs/api-clients/chipper"
 	pb "github.com/digital-dream-labs/api/go/chipperpb"
-	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
 )
 
 var (

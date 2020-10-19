@@ -12,7 +12,7 @@ import (
 
 	"github.com/digital-dream-labs/vector-cloud/internal/cloudproc"
 
-	"github.com/digital-dream-labs/sai-chipper-voice/client/chipper"
+	"github.com/digital-dream-labs/api-clients/chipper"
 	"github.com/google/uuid"
 	wav "github.com/youpy/go-wav"
 )
