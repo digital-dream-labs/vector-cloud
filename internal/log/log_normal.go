@@ -1,4 +1,4 @@
-// +build !vicos
+// THIS IS DISABLED PLUSbuild !vicos
 
 package log
 

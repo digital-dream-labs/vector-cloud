@@ -1,4 +1,4 @@
-// +build vicos
+// +build vicosBROKEN
 
 package log
 
