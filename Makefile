@@ -17,6 +17,16 @@ vic-cloud:
 	-o build/vic-cloud \
 	process/main.go
 
+	docker container run -it --rm \
+	-v "$(PWD)":/go/src/digital-dream-labs/vector-cloud \
+	-v $(GOPATH)/pkg/mod:/go/pkg/mod \
+	-w /go/src/digital-dream-labs/vector-cloud \
+	--user $(UID):$(GID) \
+	armbuilder \
+	upx build/vic-cloud
+
+
+
 vic-gateway:
 	docker container run -it --rm \
 	-v "$(PWD)":/go/src/digital-dream-labs/vector-cloud \
@@ -29,4 +39,12 @@ vic-gateway:
 	--trimpath \
 	-ldflags="-w -s -linkmode external -extldflags -static" \
 	-o build/vic-gateway \
-	gateway/main.go
+	gateway/*.go
+
+	docker container run -it --rm \
+	-v "$(PWD)":/go/src/digital-dream-labs/vector-cloud \
+	-v $(GOPATH)/pkg/mod:/go/pkg/mod \
+	-w /go/src/digital-dream-labs/vector-cloud \
+	--user $(UID):$(GID) \
+	armbuilder \
+	upx build/vic-gateway

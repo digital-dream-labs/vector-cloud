@@ -19,7 +19,6 @@ import (
 	extint "github.com/digital-dream-labs/vector-cloud/internal/proto/external_interface"
 
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
-	"github.com/digital-dream-labs/vector-cloud/internal/robot/loguploader"
 
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/context"
@@ -3155,6 +3154,8 @@ func (service *rpcService) UploadDebugLogs(ctx context.Context, in *extint.Uploa
 		return nil, grpc.Errorf(codes.ResourceExhausted, "Maximum upload rate exceeded. Please wait and try again later.")
 	}
 
+	/* disabling so we can build the gateway -bd
+
 	url, err := loguploader.UploadDebugLogs()
 	if err != nil {
 		log.Println("MessageHandler.UploadDebugLogs.Error: " + err.Error())
@@ -3165,6 +3166,14 @@ func (service *rpcService) UploadDebugLogs(ctx context.Context, in *extint.Uploa
 			Code: extint.ResponseStatus_OK,
 		},
 		Url: url,
+	}
+	return response, nil
+	*/
+
+	response := &extint.UploadDebugLogsResponse{
+		Status: &extint.ResponseStatus{
+			Code: extint.ResponseStatus_OK,
+		},
 	}
 	return response, nil
 }
