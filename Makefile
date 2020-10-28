@@ -11,7 +11,7 @@ vic-cloud:
 	--user $(UID):$(GID) \
 	armbuilder \
 	go build  \
-	-tags nolibopusfile,vicos \
+	-tags nolibopusfile,vicos,netgo \
 	--trimpath \
 	-ldflags="-w -s -linkmode external -extldflags -static" \
 	-o build/vic-cloud \
@@ -26,7 +26,6 @@ vic-cloud:
 	upx build/vic-cloud
 
 
-
 vic-gateway:
 	docker container run -it --rm \
 	-v "$(PWD)":/go/src/digital-dream-labs/vector-cloud \
@@ -35,7 +34,7 @@ vic-gateway:
 	--user $(UID):$(GID) \
 	armbuilder \
 	go build  \
-	-tags nolibopusfile,vicos \
+	-tags nolibopusfile,vicos,netgo \
 	--trimpath \
 	-ldflags="-w -s -linkmode external -extldflags -static" \
 	-o build/vic-gateway \
