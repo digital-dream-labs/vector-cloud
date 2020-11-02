@@ -3,6 +3,8 @@
 docker-builder:
 	docker build -t armbuilder docker-builder/.
 
+all: vic-cloud vic-gateway
+
 vic-cloud:
 	docker container run -it --rm \
 	-v "$(PWD)":/go/src/digital-dream-labs/vector-cloud \
@@ -11,9 +13,9 @@ vic-cloud:
 	--user $(UID):$(GID) \
 	armbuilder \
 	go build  \
-	-tags nolibopusfile,vicos,netgo \
+	-tags nolibopusfile,vicos \
 	--trimpath \
-	-ldflags="-w -s -linkmode external -extldflags -static" \
+	-ldflags="-w -s -linkmode internal -extldflags -static" \
 	-o build/vic-cloud \
 	process/main.go
 
@@ -34,9 +36,9 @@ vic-gateway:
 	--user $(UID):$(GID) \
 	armbuilder \
 	go build  \
-	-tags nolibopusfile,vicos,netgo \
+	-tags nolibopusfile,vicos \
 	--trimpath \
-	-ldflags="-w -s -linkmode external -extldflags -static" \
+	-ldflags="-w -s -linkmode internal -extldflags -static" \
 	-o build/vic-gateway \
 	gateway/*.go
 

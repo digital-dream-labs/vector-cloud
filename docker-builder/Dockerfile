@@ -17,7 +17,6 @@ ENV GOARCH=arm
 ENV GOARM=7
 ENV CGO_ENABLED=1
 ENV CC=arm-linux-gnueabi-gcc
-#ENV CC=arm-linux-gnueabihf-gcc
 ENV PKG_CONFIG_PATH=/usr/lib/arm-linux-gnueabi/pkgconfig
 ENV CXX="arm-linux-gnueabi-g++-8"
 ENV GOCACHE=/tmp
