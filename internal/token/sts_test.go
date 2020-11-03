@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anki/sai-go-util/testutils/testtime"
 	"github.com/aws/aws-sdk-go/aws/credentials"
+	testtime "github.com/digital-dream-labs/vector-cloud/internal/testing/time"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

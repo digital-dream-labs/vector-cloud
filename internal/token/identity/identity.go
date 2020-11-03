@@ -10,7 +10,6 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 	"github.com/digital-dream-labs/vector-cloud/internal/robot"
 
-	"github.com/anki/sai-token-service/model"
 	jwt "github.com/dgrijalva/jwt-go"
 	"google.golang.org/grpc/credentials"
 )
@@ -38,7 +37,7 @@ type Provider interface {
 type fileProvider struct {
 	credentials    credentials.TransportCredentials
 	jwtPath        string
-	currentToken   *model.Token
+	currentToken   *TokenInfo
 	certCommonName string
 }
 
@@ -155,12 +154,12 @@ func (c *fileProvider) tokenFile() string {
 	return path.Join(c.jwtPath, jwtFile)
 }
 
-func (c *fileProvider) parseToken(token string) (*model.Token, error) {
+func (c *fileProvider) parseToken(token string) (*TokenInfo, error) {
 	t, _, err := new(jwt.Parser).ParseUnverified(token, jwt.MapClaims{})
 	if err != nil {
 		return nil, err
 	}
-	tok, err := model.FromJwtToken(t)
+	tok, err := FromJwtToken(t)
 	if err != nil {
 		return nil, err
 	}
@@ -179,7 +178,7 @@ func (c *fileProvider) saveToken(token string) error {
 	return os.Rename(tmpFileName, fileName)
 }
 
-func logUserID(token *model.Token) {
+func logUserID(token *TokenInfo) {
 	if token == nil {
 		return
 	}
@@ -189,7 +188,7 @@ func logUserID(token *model.Token) {
 }
 
 type tokWrapper struct {
-	tok *model.Token
+	tok *TokenInfo
 }
 
 func (t tokWrapper) RefreshTime() time.Time {

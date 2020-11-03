@@ -13,8 +13,8 @@ import (
 
 	"github.com/digital-dream-labs/vector-cloud/internal/token/identity"
 
-	"github.com/anki/sai-go-util/dockerutil"
 	ac "github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/digital-dream-labs/hugh/testing/s3"
 	gc "google.golang.org/grpc/credentials"
 
 	"github.com/stretchr/testify/require"
@@ -72,7 +72,7 @@ func newTestLogCollector(endpoint, bucketName string) (*logCollector, error) {
 }
 
 type LogCollectorSuite struct {
-	dockerutil.S3Suite
+	s3.S3Suite
 
 	testRunID    int
 	testFilePath string

@@ -6,8 +6,8 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/config"
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 
-	"github.com/anki/sai-go-util/testutils/testtime"
 	"github.com/aws/aws-sdk-go/aws/credentials"
+	testtime "github.com/digital-dream-labs/vector-cloud/internal/testing/time"
 )
 
 var testableTime = testtime.New()

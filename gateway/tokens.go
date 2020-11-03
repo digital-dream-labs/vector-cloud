@@ -14,8 +14,8 @@ import (
 	"github.com/digital-dream-labs/vector-cloud/internal/ipc"
 	"github.com/digital-dream-labs/vector-cloud/internal/log"
 	"github.com/digital-dream-labs/vector-cloud/internal/robot"
+	"github.com/digital-dream-labs/vector-cloud/internal/token"
 
-	"github.com/anki/sai-token-service/client/clienthash"
 	"golang.org/x/time/rate"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
@@ -107,7 +107,7 @@ func (ctm *ClientTokenManager) CheckToken(clientToken string) (string, error) {
 		return "", grpc.Errorf(codes.Unauthenticated, "no valid tokens")
 	}
 	recentToken := ctm.ClientTokens[ctm.recentTokenIndex]
-	err := clienthash.CompareHashAndToken(recentToken.Hash, clientToken)
+	err := token.CompareHashAndToken(recentToken.Hash, clientToken)
 	if err == nil {
 		return recentToken.ClientName, nil
 	}
@@ -115,7 +115,7 @@ func (ctm *ClientTokenManager) CheckToken(clientToken string) (string, error) {
 		if idx == ctm.recentTokenIndex || len(validToken.Hash) == 0 {
 			continue
 		}
-		err = clienthash.CompareHashAndToken(validToken.Hash, clientToken)
+		err = token.CompareHashAndToken(validToken.Hash, clientToken)
 		if err == nil {
 			ctm.recentTokenIndex = idx
 			return validToken.ClientName, nil
