@@ -15,7 +15,7 @@ vic-cloud:
 	go build  \
 	-tags nolibopusfile,vicos \
 	--trimpath \
-	-ldflags="-w -s -linkmode internal -extldflags -static" \
+	-ldflags '-w -s -linkmode internal -extldflags "-static" -r /anki/lib' \
 	-o build/vic-cloud \
 	process/main.go
 
@@ -38,7 +38,7 @@ vic-gateway:
 	go build  \
 	-tags nolibopusfile,vicos \
 	--trimpath \
-	-ldflags="-w -s -linkmode internal -extldflags -static" \
+	-ldflags '-w -s -linkmode internal -extldflags "-static" -r /anki/lib' \
 	-o build/vic-gateway \
 	gateway/*.go
 
