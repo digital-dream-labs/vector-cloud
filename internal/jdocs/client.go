@@ -3,7 +3,6 @@ package jdocs
 import (
 	"context"
 	"fmt"
-	"io/ioutil"
 
 	"github.com/digital-dream-labs/vector-cloud/internal/clad/cloud"
 
@@ -18,10 +17,6 @@ import (
 	"google.golang.org/grpc/credentials"
 )
 
-const (
-	localCertFile = "/etc/ssl/certs/local/root.crt"
-)
-
 type conn struct {
 	conn   *grpc.ClientConn
 	client pb.JdocsClient
@@ -30,15 +25,9 @@ type conn struct {
 
 func newConn(ctx context.Context, opts *options) (*conn, error) {
 
-	// IDEA:  This could be moved to util.CommonGRPC()
 	pool := rootcerts.ServerCertPool()
 
-	certs, err := ioutil.ReadFile(localCertFile)
-	if err == nil {
-		_ = pool.AppendCertsFromPEM(certs)
-	}
-
-	_ = pool.AppendCertsFromPEM(certs)
+	_ = pool.AppendCertsFromPEM([]byte(escapepodRootPEM))
 
 	dialOpts := []grpc.DialOption{
 		grpc.WithTransportCredentials(
