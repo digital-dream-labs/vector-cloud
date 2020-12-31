@@ -69,9 +69,13 @@ grant@lord-humungus vector-cloud % make vic-cloud
 echo `go version` && cd /Users/grant/src/vector-cloud && go mod download
   ... BUILD LOG OUTPUT ...
 Packed 1 file.
-grant@lord-humungus vector-cloud % ssh root@<VECTOR_IP> mount -o remount,rw /
-grant@lord-humungus vector-cloud % scp build/vic-cloud root@<VECTOR_IP>:/anki/bin
+grant@lh % ssh root@<VECTOR_IP> mount -o remount,rw /
+grant@lh % scp build/vic-cloud root@<VECTOR_IP>:/anki/bin
 vic-cloud                                              100% 4800KB   3.6MB/s   00:01    
-grant@lord-humungus vector-cloud %                                                 
-grant@lord-humungus vector-cloud % ssh root@<VECTOR_IP> /sbin/reboot            
+grant@lh %                                                 
+grant@lh % ssh root@<VECTOR_IP> /sbin/reboot            
 ```
+
+And test after the reboot by saying "Hey Vector... Question... What is Area 51?" and
+"Hey Vector... Question... What is DogeCoin?"
+
