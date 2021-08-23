@@ -110,10 +110,12 @@ func (strm *Streamer) responseRoutine() {
 			log.Println("Intent response ->", fmt.Sprintf("%T", resp))
 		}
 		switch r := resp.(type) {
-		case *chipper.IntentResult:
-			sendIntentResponse(r, strm.receiver)
-		case *chipper.KnowledgeGraphResponse:
-			sendKGResponse(r, strm.receiver)
+		case *chipper.IntentGraphResponse:
+			sendIntentGraphResponse(r, strm.receiver)
+		// case *chipper.IntentResult:
+		// 	sendIntentResponse(r, strm.receiver)
+		// case *chipper.KnowledgeGraphResponse:
+		// 	sendKGResponse(r, strm.receiver)
 		case *chipper.ConnectionCheckResponse:
 			sendConnectionCheckResponse(r, strm.receiver, strm.opts.checkOpts)
 		default:
@@ -174,6 +176,14 @@ func sendKGResponse(resp *chipper.KnowledgeGraphResponse, receiver Receiver) {
 		Parameters: buf.String(),
 		Metadata:   "",
 	})
+}
+
+func sendIntentGraphResponse(resp *chipper.IntentGraphResponse, receiver Receiver) {
+	if chipper.IsIntent(*resp) {
+		sendIntentResponse(chipper.ConvertToIntentResp(resp), receiver)
+	} else {
+		sendKGResponse(chipper.ConvertToKnowledgeGraphResp(resp), receiver)
+	}
 }
 
 func sendConnectionCheckResponse(resp *chipper.ConnectionCheckResponse, receiver Receiver, opts *chipper.ConnectOpts) {

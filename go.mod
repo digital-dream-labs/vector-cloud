@@ -21,3 +21,8 @@ require (
 	google.golang.org/genproto v0.0.0-20201030142918-24207fddd1c3
 	google.golang.org/grpc v1.33.1
 )
+
+replace (
+	github.com/digital-dream-labs/api => ../api
+	github.com/digital-dream-labs/api-clients => ../api-clients
+)
