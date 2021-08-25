@@ -53,10 +53,9 @@ func WithKnowledgeGraphOptions(opts chipper.KGOpts) Option {
 	}
 }
 
-func WithIntentGraphOptions(opts chipper.IntentGraphOpts) Option {
+func WithIntentGraphOptions(opts chipper.IntentGraphOpts, mode cloud.StreamType) Option {
 	return func(o *options) {
-		// TODO: Replace with correct mode
-		o.mode = cloud.StreamType_KnowledgeGraph
+		o.mode = mode
 		o.intentGraphOpts = &opts
 		o.streamOpts = &opts.StreamOpts
 	}

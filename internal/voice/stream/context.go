@@ -112,10 +112,8 @@ func (strm *Streamer) responseRoutine() {
 		switch r := resp.(type) {
 		case *chipper.IntentGraphResponse:
 			sendIntentGraphResponse(r, strm.receiver)
-		// case *chipper.IntentResult:
-		// 	sendIntentResponse(r, strm.receiver)
-		// case *chipper.KnowledgeGraphResponse:
-		// 	sendKGResponse(r, strm.receiver)
+		case *chipper.KnowledgeGraphResponse:
+			sendKGResponse(r, strm.receiver)
 		case *chipper.ConnectionCheckResponse:
 			sendConnectionCheckResponse(r, strm.receiver, strm.opts.checkOpts)
 		default:

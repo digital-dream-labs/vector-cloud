@@ -209,23 +209,20 @@ procloop:
 				chipperOpts.NoDas = hw.NoLogging
 
 				var option stream.Option
-				option = stream.WithIntentGraphOptions(chipper.IntentGraphOpts{
-					StreamOpts: chipperOpts,
-					Handler:    p.opts.handler,
-					Mode:       serverMode,
-				})
-				// if mode == cloud.StreamType_KnowledgeGraph {
-				// 	option = stream.WithKnowledgeGraphOptions(chipper.KGOpts{
-				// 		StreamOpts: chipperOpts,
-				// 		Timezone:   hw.Timezone,
-				// 	})
-				// } else {
-				// 	option = stream.WithIntentOptions(chipper.IntentOpts{
-				// 		StreamOpts: chipperOpts,
-				// 		Handler:    p.opts.handler,
-				// 		Mode:       serverMode,
-				// 	}, mode)
-				// }
+				// Leaving in KnowledgeGraph mode so that "I have a question" is still an option
+				if mode == cloud.StreamType_KnowledgeGraph {
+					option = stream.WithKnowledgeGraphOptions(chipper.KGOpts{
+						StreamOpts: chipperOpts,
+						Timezone:   hw.Timezone,
+					})
+				} else {
+					// Replaces Intent with hybrid that can respond to KG directly if necessary
+					option = stream.WithIntentGraphOptions(chipper.IntentGraphOpts{
+						StreamOpts: chipperOpts,
+						Handler:    p.opts.handler,
+						Mode:       serverMode,
+					}, mode)
+				}
 				logVerbose("Got hotword event", serverMode)
 				newReceiver := *cloudChans
 				strm = p.newStream(ctx, &newReceiver, option)
