@@ -104,6 +104,8 @@ github.com/digital-dream-labs/api v0.0.0-20210824232136-8cc90c1bb12c h1:ITlFplPH
 github.com/digital-dream-labs/api v0.0.0-20210824232136-8cc90c1bb12c/go.mod h1:WNiZyUz2m0GppMJuwVvaLvtmC5mVM+YhcrxHBktqjr0=
 github.com/digital-dream-labs/api-clients v0.0.0-20210827163254-ba4df2ea97f2 h1:/9fnz/lGTEmF+oTTL2RT6DS8jwLTNMx4KeIXLQCl04M=
 github.com/digital-dream-labs/api-clients v0.0.0-20210827163254-ba4df2ea97f2/go.mod h1:Brz2N9V2v1mpLQRI/bdVfuAUpQ2AF/tM1D8DVa9hibQ=
+github.com/digital-dream-labs/api-clients v0.0.0-20210830180812-99d038d08a9d h1:A7Tk6UfpHvczFgYe6o1yJpHLdu5d4L8lLJTERDXHdjs=
+github.com/digital-dream-labs/api-clients v0.0.0-20210830180812-99d038d08a9d/go.mod h1:Brz2N9V2v1mpLQRI/bdVfuAUpQ2AF/tM1D8DVa9hibQ=
 github.com/digital-dream-labs/hugh v0.0.0-20201230195335-18bf4b22cf9d h1:MvlmT9kqwgbtSTRl4SXoYveb9jpLmqFHhE31/6Wg8Hg=
 github.com/digital-dream-labs/hugh v0.0.0-20201230195335-18bf4b22cf9d/go.mod h1:aHzB67P53R70J1S9eI+Syr5HcCHIhS82y2M2jUqw5yA=
 github.com/digital-dream-labs/opus-go v0.0.0-20201230195736-934a8a9e0a1e h1:sbDWWDUdymyp3fTeQKz40a3x/frOSiWkBHD40o1/DQY=
@@ -130,6 +132,7 @@ github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMo
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=
 github.com/fsouza/go-dockerclient v1.6.6 h1:9e3xkBrVkPb81gzYq23i7iDUEd6sx2ooeJA/gnYU6R4=
 github.com/fsouza/go-dockerclient v1.6.6/go.mod h1:3/oRIWoe7uT6bwtAayj/EmJmepBjeL4pYvt7ZxC7Rnk=
+github.com/ghodss/yaml v1.0.0 h1:wQHKEahhL6wmXdzwWG11gIVCkOv05bNOh+Rxn0yngAk=
 github.com/ghodss/yaml v1.0.0/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeMEF04=
 github.com/go-gl/glfw v0.0.0-20190409004039-e6da0acd62b1/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20191125211704-12ad95a8df72/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
@@ -700,6 +703,8 @@ google.golang.org/genproto v0.0.0-20201019141844-1ed22bb0c154/go.mod h1:FWY/as6D
 google.golang.org/genproto v0.0.0-20210824181836-a4879c3d0e89/go.mod h1:eFjDcFEctNawg4eG61bRv87N7iHBWyVhJu7u1kqDUXY=
 google.golang.org/genproto v0.0.0-20210825212027-de86158e7fda h1:iT5uhT54PtbqUsWddv/nnEWdE5e/MTr+Nv3vjxlBP1A=
 google.golang.org/genproto v0.0.0-20210825212027-de86158e7fda/go.mod h1:eFjDcFEctNawg4eG61bRv87N7iHBWyVhJu7u1kqDUXY=
+google.golang.org/genproto v0.0.0-20210830153122-0bac4d21c8ea h1:5eMUso2GVOxypVH1fR4oKgDobrvi4DHctJ4fVk66s/4=
+google.golang.org/genproto v0.0.0-20210830153122-0bac4d21c8ea/go.mod h1:eFjDcFEctNawg4eG61bRv87N7iHBWyVhJu7u1kqDUXY=
 google.golang.org/grpc v1.19.0/go.mod h1:mqu4LbDTu4XGKhr4mRzUsmM4RtVoemTSY81AxZiDr8c=
 google.golang.org/grpc v1.20.1/go.mod h1:10oTOabMzJvdu6/UiuZezV6QK5dSlG84ov/aaiqXj38=
 google.golang.org/grpc v1.21.1/go.mod h1:oYelfM1adQP15Ek0mdvEgi9Df8B9CZIaU1084ijfRaM=
