@@ -116,6 +116,8 @@ func (strm *Streamer) responseRoutine() {
 			sendKGResponse(r, strm.receiver, false)
 		case *chipper.ConnectionCheckResponse:
 			sendConnectionCheckResponse(r, strm.receiver, strm.opts.checkOpts)
+		case *chipper.IntentResult:
+			sendIntentResponse(r, strm.receiver)
 		default:
 			log.Println("Unexpected response type:", fmt.Sprintf("%T", resp))
 		}

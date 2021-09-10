@@ -216,12 +216,23 @@ procloop:
 						Timezone:   hw.Timezone,
 					})
 				} else {
-					// Replaces Intent with hybrid that can respond to KG directly if necessary
-					option = stream.WithIntentGraphOptions(chipper.IntentGraphOpts{
-						StreamOpts: chipperOpts,
-						Handler:    p.opts.handler,
-						Mode:       serverMode,
-					}, mode)
+					// TODO: Figure a way to find out if it is in ESCAPE_POD mode
+					escape_pod_mode := false
+					if escape_pod_mode {
+						// Replaces Intent with hybrid that can respond to KG directly if necessary
+						option = stream.WithIntentOptions(chipper.IntentOpts{
+							StreamOpts: chipperOpts,
+							Handler:    p.opts.handler,
+							Mode:       serverMode,
+						}, mode)
+					} else {
+						// Replaces Intent with hybrid that can respond to KG directly if necessary
+						option = stream.WithIntentGraphOptions(chipper.IntentGraphOpts{
+							StreamOpts: chipperOpts,
+							Handler:    p.opts.handler,
+							Mode:       serverMode,
+						}, mode)
+					}
 				}
 				logVerbose("Got hotword event", serverMode)
 				newReceiver := *cloudChans

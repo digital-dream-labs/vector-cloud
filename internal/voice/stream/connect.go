@@ -142,6 +142,8 @@ func (strm *Streamer) openChipperStream(ctx context.Context, creds credentials.P
 		stream, err = conn.NewIntentGraphStream(ctx, *strm.opts.intentGraphOpts)
 	case strm.opts.kgOpts != nil:
 		stream, err = conn.NewKGStream(ctx, *strm.opts.kgOpts)
+	case strm.opts.intentOpts != nil:
+		stream, err = conn.NewIntentStream(ctx, *strm.opts.intentOpts)
 	default:
 		err = errors.New("fatal error: all stream option types are nil")
 	}
