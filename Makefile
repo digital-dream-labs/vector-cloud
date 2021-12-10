@@ -52,3 +52,11 @@ vic-gateway: go_deps
 	--user $(UID):$(GID) \
 	armbuilder \
 	upx build/vic-gateway
+
+upload-on-vector:
+	@ssh root@$(ROBOT_IP) "mount -o remount,rw /"
+	@ssh root@$(ROBOT_IP) "systemctl stop vic-cloud"
+	@ssh root@$(ROBOT_IP) "systemctl stop vic-gateway"
+	@scp ./build/vic-cloud root@$(ROBOT_IP):/anki/bin/vic-cloud 
+	@scp ./build/vic-gateway root@$(ROBOT_IP):/anki/bin/vic-gateway 
+	@ssh root@$(ROBOT_IP) "systemctl daemon-reload"

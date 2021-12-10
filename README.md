@@ -21,6 +21,21 @@ To build vic-gateway, run...
 ```
 # make vic-gateway
 ```
+## Development
+If you have vector with ssh enabled you can you use the following to easily upload the
+generated binaries.
+
+```
+# make upload-on-vector 
+```
+
+The make command assumes that you have the robot ip saved under the ROBOT_IP, which is 
+a comman practise while developing on vector robots. If you dont have that setup you can 
+use the following.
+
+```
+# make upload-on-vector ROBOT_IP=192.168.65.97
+```
 
 ## Example Customization
 
