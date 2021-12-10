@@ -59,7 +59,7 @@ func (strm *Streamer) newChipperConn(ctx context.Context) (Conn, *CloudError) {
 			},
 		}
 
-		otaURL = "https://" + config.Env.Check + suffix
+		otaURL = "http://" + config.Env.Check + suffix
 		req, err = http.NewRequest("HEAD", otaURL, nil)
 		if err != nil {
 			log.Println("Error creating CDN server https head request:", err)
