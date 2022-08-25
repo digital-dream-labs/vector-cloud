@@ -152,9 +152,9 @@ func (ctm *ClientTokenManager) UpdateTokens() error {
 	}
 	resp, err := ctm.sendBlock(cloud_clad.NewDocRequestWithRead(&cloud_clad.ReadRequest{
 		Account: id,
-		Thing:   fmt.Sprintf("vic:%s", esn),
+		Thing:   fmt.Sprintf("cozmo:%s", esn),
 		Items: []cloud_clad.ReadItem{
-			cloud_clad.ReadItem{
+			{
 				DocName:      "vic.AppTokens",
 				MyDocVersion: 0,
 			},
