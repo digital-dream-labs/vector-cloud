@@ -50,6 +50,7 @@ type ClientTokenManager struct {
 	lastUpdatedTokens time.Time          `json:"-"`
 	forceClearFile    bool               `json:"-"`
 	limiter           *MultiLimiter      `json:"-"`
+	cloudDir          string
 }
 
 func (ctm *ClientTokenManager) Init() error {
@@ -73,6 +74,7 @@ func (ctm *ClientTokenManager) Init() error {
 		rate.NewLimiter(rate.Every(15*time.Minute), 3),
 		rate.NewLimiter(rate.Every(time.Hour), 6),
 	)
+	ctm.cloudDir = "/factory/cloud"
 	ctm.checkValid = make(chan struct{})
 	ctm.notifyValid = make(chan struct{})
 	ctm.updateNowChan = make(chan chan struct{})
@@ -146,13 +148,18 @@ func (ctm *ClientTokenManager) UpdateTokens() error {
 			ctm.forceClearFile = false
 		}
 	}
-	id, esn, err := ctm.getIDs()
+	id, _, err := ctm.getIDs()
 	if err != nil {
 		return err
 	}
+
+	commonName, err := ctm.getCertCommonName()
+	if err != nil {
+		return fmt.Errorf("get cert common name: %v", err)
+	}
 	resp, err := ctm.sendBlock(cloud_clad.NewDocRequestWithRead(&cloud_clad.ReadRequest{
 		Account: id,
-		Thing:   fmt.Sprintf("cozmo:%s", esn),
+		Thing:   commonName,
 		Items: []cloud_clad.ReadItem{
 			{
 				DocName:      "vic.AppTokens",
@@ -197,6 +204,10 @@ func (ctm *ClientTokenManager) getIDs() (string, string, error) {
 	}
 
 	return user.UserId, esn, nil
+}
+
+func (ctm *ClientTokenManager) getCertCommonName() (string, error) {
+	return robot.CertCommonName(ctm.cloudDir)
 }
 
 func (ctm *ClientTokenManager) sendBlock(request *cloud_clad.DocRequest) (*cloud_clad.DocResponse, error) {
